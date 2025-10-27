@@ -1,0 +1,14 @@
+필드명,데이터 타입,예시 값,용도
+asset_id,string,dungeon_001,고유 식별자
+asset_name,string,Dark Gothic Cathedral Ruins,에셋 이름
+concept,string,abandoned cathedral with crumbling pillars,간단한 컨셉 (10단어 이내)
+description,string (long text),"A vast ruined cathedral with gothic arches, featuring multiple levels connected by broken stairs...",상세 설명 (AI 학습용 메인 텍스트)
+architectural_style,string (categorical),Gothic,"건축 스타일 분류 (Gothic, Renaissance, Oriental, etc.)"
+spatial_type,string (categorical),Cathedral Interior,"공간 유형 (Corridor, Arena, Vertical Platform, Bridge, etc.)"
+dimensions,"dict {width, length, height}","{width: 50, length: 80, height: 30}",실제 크기 정보 (미터 단위)
+player_pathfinding,"list of dict [{position, radius, description}]","[{position: [10, 0, 15], radius: 5, description: 'main entrance corridor'}]",플레이어가 이동할 수 있는 경로 정보
+combat_zones,"list of dict [{position, size, type}]","[{position: [25, 0, 40], size: [15, 0, 20], type: 'boss arena'}]",전투가 발생하는 공간 정보
+vertical_elements,list of string,"['altar platform', 'bell tower access', 'underground crypt entrance']","수직 구조 요소 (계단, 사다리, 플랫폼 등)"
+narrative_hints,list of string,"['shattered stained glass', 'collapsed ceiling reveals sky', 'abandoned prayer books']",환경 스토리텔링 요소
+lighting_mood,string (categorical),Dark Ambient,"조명 분위기 (Dark Ambient, Bright, Foggy, etc.)"
+difficulty_level,int (1-5),3,"게임 난이도 (1=쉬움, 5=어려움)"

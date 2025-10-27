@@ -1,0 +1,13 @@
+단계,작업 내용,코드 파일,예상 시간
+Step 1: 데이터 준비,FBX 10개 파일 준비 (소울라이크 스타일 던전/성 에셋),prepare_data.py,1시간 (수동)
+Step 1: 데이터 준비,각 FBX에 대응하는 JSON 메타데이터 작성 (위 구조 참고),create_metadata.py,2시간 (수동)
+Step 1: 데이터 준비,"파일 구조: data/dungeon_001.fbx, data/dungeon_001.json",dataset.py,10분
+Step 2: 데이터 전처리,"FBX → Point Cloud 변환 (Trimesh 사용, 1024 points)",preprocess.py,30분
+Step 2: 데이터 전처리,"Point Cloud 정규화 (중심점 0,0,0, Bounding Box 1x1x1)",augmentation.py,20분
+Step 2: 데이터 전처리,데이터 증강 (10가지 회전 × 2가지 스케일 = 20배 증강),dataset.py,30분
+Step 3: 모델 구축,CLIP Text Encoder 로드 (Frozen),model.py,30분
+Step 3: 모델 구축,MLP Decoder 정의 (512+128 → 3072),model.py,30분
+Step 4: 학습,Training Loop 구현 (Chamfer Distance Loss),train.py,2~4시간
+Step 4: 학습,"TensorBoard 로깅, 체크포인트 저장",train.py,2~4시간
+Step 5: 평가 및 시각화,생성된 Point Cloud 시각화 (Open3D),visualize.py,30분
+Step 5: 평가 및 시각화,ONNX Export → Unity Sentis 테스트,export_onnx.py,1시간

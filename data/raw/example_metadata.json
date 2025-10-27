@@ -1,0 +1,82 @@
+{
+  "asset_id": "dungeon_001",
+  "asset_name": "Dark Gothic Cathedral Ruins",
+  "concept": "abandoned cathedral with crumbling pillars and broken stained glass",
+  "description": "A vast ruined cathedral with gothic arches, featuring multiple levels connected by broken stairs. The main hall has collapsed sections revealing the sky, with scattered debris and overgrown vegetation. Dark ambient lighting filters through shattered stained glass windows.",
+  "architectural_style": "Gothic",
+  "spatial_type": "Cathedral Interior",
+  "dimensions": {
+    "width": 50,
+    "length": 80,
+    "height": 30
+  },
+  "player_pathfinding": [
+    {
+      "position": [
+        10,
+        0,
+        15
+      ],
+      "radius": 5,
+      "description": "main entrance corridor"
+    },
+    {
+      "position": [
+        25,
+        0,
+        40
+      ],
+      "radius": 8,
+      "description": "central nave with debris obstacles"
+    },
+    {
+      "position": [
+        40,
+        10,
+        60
+      ],
+      "radius": 6,
+      "description": "upper balcony access via broken stairs"
+    }
+  ],
+  "combat_zones": [
+    {
+      "position": [
+        25,
+        0,
+        40
+      ],
+      "size": [
+        15,
+        0,
+        20
+      ],
+      "type": "mini-boss arena"
+    },
+    {
+      "position": [
+        50,
+        0,
+        70
+      ],
+      "size": [
+        20,
+        0,
+        25
+      ],
+      "type": "multi-enemy ambush"
+    }
+  ],
+  "vertical_elements": [
+    "broken staircase to upper balcony",
+    "collapsed bell tower with climbable rubble",
+    "underground crypt entrance"
+  ],
+  "narrative_hints": [
+    "shattered stained glass depicting ancient battles",
+    "collapsed altar with old prayer books",
+    "bloodstains leading to hidden passage"
+  ],
+  "lighting_mood": "Dark Ambient",
+  "difficulty_level": 3
+}
