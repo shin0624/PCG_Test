@@ -5,10 +5,10 @@
 # ============================================================
 # Core Deep Learning Framework
 # ============================================================
-# PyTorch 2.1.2 - Python 3.10 완전 지원, CUDA 11.8/12.1 호환
-torch==2.1.2
-torchvision==0.16.2
-torchaudio==2.1.2
+torch
+torchvision
+torchaudio
+
 
 # ============================================================
 # 3D Processing Libraries

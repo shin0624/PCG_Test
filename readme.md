@@ -113,52 +113,87 @@ Output: 3D Point Cloud → Mesh (Marching Cubes)
 
 ### 의존성 패키지
 ```
-=== 패키지 의존성 상세 설명 ===
+# ============================================================
+# Core Deep Learning Framework
+# ============================================================
+torch
+torchvision
+torchaudio
 
-1. torch==2.1.2 (PyTorch Core)
-   ├─ numpy==1.24.4 (고정)
-   ├─ typing-extensions
-   ├─ sympy
-   ├─ networkx (이미 포함)
-   └─ 충돌 없음
 
-2. torchvision==0.16.2
-   ├─ torch==2.1.2 (호환)
-   ├─ Pillow==10.1.0 (호환)
-   └─ 충돌 없음
+# ============================================================
+# 3D Processing Libraries
+# ============================================================
+# Trimesh - Python 3.8+ 지원, 안정적인 3D 메쉬 처리
+trimesh==4.0.5
 
-3. trimesh==4.0.5
-   ├─ numpy==1.24.4 (필수)
-   ├─ scipy==1.11.4 (선택적)
-   ├─ networkx==3.2.1 (선택적)
-   └─ shapely==2.0.2 (선택적)
-   ⚠️ numpy 2.x 사용 시 오류 발생 → 1.24.4 고정
+# Open3D - Python 3.10 공식 wheel 제공
+open3d==0.18.0
 
-4. open3d==0.18.0
-   ├─ numpy==1.24.4 (필수)
-   ├─ 독립적인 C++ 백엔드
-   └─ 충돌 없음
-   ⚠️ numpy 2.x 비호환 → 1.24.4 고정
+# ============================================================
+# NumPy (중요: 2.x는 호환 문제 발생)
+# ============================================================
+# NumPy 1.24.x는 Python 3.10과 완벽 호환
+# 2.x는 일부 패키지와 충돌 (특히 Open3D, Trimesh)
+numpy==1.24.4
 
-5. onnx==1.15.0
-   ├─ protobuf==3.20.3 (고정)
-   └─ numpy==1.24.4
-   ⚠️ protobuf 4.x 사용 시 충돌 → 3.20.3 고정
+# ============================================================
+# Visualization & Logging
+# ============================================================
+# TensorBoard - PyTorch 2.1과 호환
+tensorboard==2.15.1
 
-6. onnxruntime-gpu==1.16.3
-   ├─ onnx==1.15.0 (호환)
-   ├─ protobuf==3.20.3 (호환)
-   ├─ numpy==1.24.4
-   ├─ CUDA 11.8 또는 12.1 필요
-   └─ cuDNN 8.x 필요 (자동 설치)
+# tqdm - 진행 표시줄 (CLIP 의존성이기도 함)
+tqdm==4.66.1
 
-7. CLIP (git+https://github.com/openai/CLIP.git)
-   ├─ torch (이미 설치)
-   ├─ torchvision (이미 설치)
-   ├─ ftfy==6.1.3
-   ├─ regex==2023.10.3
-   ├─ tqdm==4.66.1
-   └─ Pillow (이미 설치)
+# ============================================================
+# CLIP Dependencies (OpenAI CLIP 설치 전 필요)
+# ============================================================
+# ftfy - 텍스트 정리 (CLIP 필수)
+ftfy==6.1.3
+
+# regex - 정규표현식 (CLIP 필수)
+regex==2023.10.3
+
+# Pillow - 이미지 처리 (CLIP 필수)
+Pillow==10.1.0
+
+# ============================================================
+# ONNX Export & Runtime
+# ============================================================
+# ONNX - 모델 변환
+onnx==1.15.0
+
+# ONNX Runtime GPU - Python 3.10 지원
+onnxruntime-gpu==1.16.3
+
+# ProtoBuf - ONNX 의존성 (버전 고정으로 충돌 방지)
+protobuf==3.20.3
+
+# ============================================================
+# Additional Dependencies
+# ============================================================
+# SciPy - Trimesh 일부 기능에 필요
+scipy==1.11.4
+
+# NetworkX - Trimesh 그래프 연산
+networkx==3.2.1
+
+# Shapely - Trimesh 경로 처리
+shapely==2.0.2
+
+# ============================================================
+# CLIP Installation (별도 설치 필요)
+# ============================================================
+# 아래 명령어를 requirements.txt 설치 후 실행:
+# pip install git+https://github.com/openai/CLIP.git
+
+# ============================================================
+# 설치 순서 (중요!)
+# ============================================================
+# 1. pip install --upgrade pip
+# 2. pip install -r requirements.txt
+# 3. pip install git+https://github.com/openai/CLIP.git
 ```
 
 ```
