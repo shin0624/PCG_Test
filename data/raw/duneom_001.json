@@ -1,0 +1,71 @@
+{
+  "asset_id": "dungeon_001",
+  "asset_name": "Japanese Traditional Town",
+  "concept": "Japanese Kyoto-style building and village with cherry blossom trees and a river",
+  "description": "There are four-story pagodas and low-rise buildings in the Japanese Kyoto style, and a river with a traditional \"torii\" gate and wooden bridge is located in the middle of the map. Cherry blossom trees are planted throughout the map, and areas with elevated levels are connected by stone steps and wooden fences. The riverbank and building roofs are accented with oriental beauty and color due to fallen cherry blossom petals.",
+  "architectural_style": "Oriental",
+  "spatial_type": "Village",
+  "dimensions": {
+    "width": 30,
+    "length": 30,
+    "height": 15
+  },
+  "player_pathfinding": [
+    {
+      "position": [
+        -8,
+        -6,
+        1
+      ],
+      "radius": 5,
+      "description": "main entrance"
+    },
+    {
+      "position": [
+        5.6,
+        0,
+        4.5
+      ],
+      "radius": 1,
+      "description": "In front of the entrance to the Japanese-style four-story pagoda"
+    },
+    {
+      "position": [
+        -3.6,
+        -6,
+        1.8
+      ],
+      "radius": 2,
+      "description": "The center of the wooden bridge connecting the torii and the village"
+    }
+  ],
+  "combat_zones": [
+    {
+      "position": [
+      ],
+      "size": [
+      ],
+      "type": ""
+    },
+    {
+      "position": [
+
+      ],
+      "size": [
+      ],
+      "type": ""
+    }
+  ],
+  "vertical_elements": [
+    "Stone steps running along the hill wall",
+    "A four-story pagoda with a Kyoto-style atmosphere and cherry blossom petals on the roof tiles."
+  ],
+  "narrative_hints": [
+    "A building with a traditional oriental atmosphere",
+    "An environment and lighting that allows you to feel tranquility and sentimentality",
+    "A sense of stability felt through stone buildings and wooden fences and decorations.",
+    "The splendor felt from the cherry blossom trees and cherry blossom petals"
+  ],
+  "lighting_mood": "Warm morning sunlight",
+  "difficulty_level": 1
+}
