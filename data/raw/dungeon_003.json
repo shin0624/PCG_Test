@@ -1,0 +1,83 @@
+{
+  "asset_id": "dungeon_003",
+  "asset_name": "Witch`s Garden",
+  "concept": "A garden and planetarium once managed by a witch",
+  "description": "Once a garden and planetarium managed by a witch, it has fallen into disrepair and desolation due to neglect since the witch's sealing. The ruins of weathered buildings and shards of stained glass are scattered throughout, and the garden is littered with overgrown trees and rotten grass. While once a beautiful building, only the remnants of the witch's past remain, casting a dark and somber atmosphere.",
+  "architectural_style": "Gothic",
+  "spatial_type": "Garden and Planetarium",
+  "dimensions": {
+    "width": 28,
+    "length": 17,
+    "height": 30
+  },
+  "player_pathfinding": [
+    {
+      "position": [
+        1.1,
+        0.0,
+        0.0
+      ],
+      "radius": 5,
+      "description": "Player Start Point"
+    },
+    {
+      "position": [
+        0.0,
+        0.5,
+        0.0
+      ],
+      "radius": 15,
+      "description": "Planetarium"
+    },
+    {
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "radius": 28,
+      "description": "Garden"
+    }
+  ],
+  "combat_zones": [
+    {
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        28,
+        1,
+        29.6
+      ],
+      "type": "All areas where battles take place within the garden"
+    },
+    {
+      "position": [
+        0.0,
+        0.0,
+        0.15
+      ],
+      "size": [
+        5,
+        4,
+        5
+      ],
+      "type": "Boss area where you can awaken the sealed witch"
+    }
+  ],
+  "vertical_elements": [
+    "Broken stained glass windows",
+    "Tall, overgrown trees with twisted branches",
+    "Ruined stone pillars and arches"
+  ],
+  "narrative_hints": [
+    "A building with a mysterious gothic atmosphere",
+    "A gloomy atmosphere with a sense of dark magic",
+    "A garden overtaken by nature, evoking a sense of melancholy",
+    "An environment and lighting that allows you to feel mystery and solitude"
+  ],
+  "lighting_mood": "Dim moonlight filtering through broken stained glass",
+  "difficulty_level": 2
+}

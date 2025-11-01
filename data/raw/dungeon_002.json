@@ -1,0 +1,82 @@
+{
+  "asset_id": "dungeon_002",
+  "asset_name": "Abandoned ancient labyrinth ruins",
+  "concept": "An ancient medieval-style labyrinth, where you can feel the mysterious atmosphere and the oppression and fear of a closed space.",
+  "description": "The labyrinth, made of medieval-style stone walls, has a pair of torches per block placed on each side of the wall, and narrow passageways branch out into several paths centered around a central altar decorated with skulls, giving it the appearance of a labyrinth.",
+  "architectural_style": "Medieval",
+  "spatial_type": "Corridor",
+  "dimensions": {
+    "width": 10.32,
+    "length": 4.51,
+    "height": 14.95
+  },
+  "player_pathfinding": [
+    {
+      "position": [
+        -1.42,
+        -1.22,
+        0
+      ],
+      "radius": 5,
+      "description": "Player Start Point"
+    },
+    {
+      "position": [
+        6.0,
+        14.6,
+        0.2
+      ],
+      "radius": 10,
+      "description": "The skull altar located in the center of the labyrinth"
+    },
+    {
+      "position": [
+        0.01,
+        4.2,
+        2.5
+      ],
+      "radius": 10,
+      "description": "Fake Altar Room for invaders"
+    }
+  ],
+  "combat_zones": [
+    {
+      "position": [
+        6.0,
+        14.6,
+        0.2
+      ],
+      "size": [
+        10.6,
+        3.3,
+        14.6
+      ],
+      "type": "Fake Altar Room"
+    },
+    {
+      "position": [
+        6.0,
+        14.6,
+        0.2
+      ],
+      "size": [
+        10.3,
+        4.51,
+        15.0
+      ],
+      "type": "The Center Altar of the Labyrinth"
+    }
+  ],
+  "vertical_elements": [
+    "Altar platform decorated with skulls",
+    "Torches flickering along the walls"
+  ],
+  "narrative_hints": [
+    "A building with a mysterious medieval atmosphere",
+    "A labyrinthine environment that evokes a sense of mystery",
+    "A sense of foreboding as you navigate the twisting passages",
+    "An environment and lighting that allows you to feel oppression and fear"
+  ],
+  "lighting_mood": "Dim torchlight flickering on stone walls",
+  "difficulty_level": 4
+}
